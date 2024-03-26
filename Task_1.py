@@ -4,6 +4,10 @@ FIELDNAMES = ['id', 'Name', 'titleProject_id', 'class', 'score']
 
 
 def get_data():
+    """
+    Возвращает список словарей с полями таблицы
+    :return: список словарей
+    """
     with open('students.csv', encoding='utf-8') as file:
         data = list(csv.DictReader(file, delimiter=','))
 
